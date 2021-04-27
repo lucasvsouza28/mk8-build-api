@@ -1,11 +1,12 @@
 import 'reflect-metadata'
+
 import express, {
     Request,
     Response,
 } from 'express';
 import cors from 'cors';
 
-import './containers/index';
+import './containers';
 import routes from './routers';
 import path from 'path';
 
@@ -27,3 +28,5 @@ app.use(routes);
 app.listen(port, () => {
     console.log(`API listening on port ${port}`);
 });
+
+exports = {}
