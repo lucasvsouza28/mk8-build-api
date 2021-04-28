@@ -14,4 +14,5 @@ export default interface Body {
     miniturbo: number | null;
     insideDrift: boolean | null;
     imageUrl: string;
+    size: number;
 }
