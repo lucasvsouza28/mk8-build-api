@@ -14,7 +14,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "tsc",
     "test": "jest --coverage",
-    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build:js",
+    "heroku-postbuild": "npm install --no-shrinkwrap && npm run build:js",
     "start": "nodemon"
   },
   "dependencies": {
