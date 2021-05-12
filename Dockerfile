@@ -3,8 +3,7 @@ FROM node:lts-alpine AS deps
 
 WORKDIR /opt/app
 COPY package*.json ./
-COPY tsconfig.json ./
-RUN npm i
+RUN npm ci --only=production
 
 # Build with typescript
 FROM node:lts-alpine AS builder
